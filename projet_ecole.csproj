@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3150FBBE-92A6-4317-BABA-631EEA00CFE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projet_ecole</RootNamespace>
+    <AssemblyName>projet_ecole</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_SIMPLE_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_SIMPLE_USER.Designer.cs">
+      <DependentUpon>ADD_SIMPLE_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLASSES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLASSES.Designer.cs">
+      <DependentUpon>CLASSES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLASSES_SU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLASSES_SU.Designer.cs">
+      <DependentUpon>CLASSES_SU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY.Designer.cs">
+      <DependentUpon>FACULTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY_SU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY_SU.Designer.cs">
+      <DependentUpon>FACULTY_SU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_PRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT_PRO.Designer.cs">
+      <DependentUpon>PAYMENT_PRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_STU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT_STU.Designer.cs">
+      <DependentUpon>PAYMENT_STU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT_STU_SU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT_STU_SU.Designer.cs">
+      <DependentUpon>PAYMENT_STU_SU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROFESSORS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROFESSORS.Designer.cs">
+      <DependentUpon>PROFESSORS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCHOOL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL.Designer.cs">
+      <DependentUpon>SCHOOL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIMPLE_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIMPLE_USER.Designer.cs">
+      <DependentUpon>SIMPLE_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENTS.Designer.cs">
+      <DependentUpon>STUDENTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENTS_SU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENTS_SU.Designer.cs">
+      <DependentUpon>STUDENTS_SU.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_SIMPLE_USER.resx">
+      <DependentUpon>ADD_SIMPLE_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLASSES.resx">
+      <DependentUpon>CLASSES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLASSES_SU.resx">
+      <DependentUpon>CLASSES_SU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY.resx">
+      <DependentUpon>FACULTY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY_SU.resx">
+      <DependentUpon>FACULTY_SU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT_PRO.resx">
+      <DependentUpon>PAYMENT_PRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT_STU.resx">
+      <DependentUpon>PAYMENT_STU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT_STU_SU.resx">
+      <DependentUpon>PAYMENT_STU_SU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROFESSORS.resx">
+      <DependentUpon>PROFESSORS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SCHOOL.resx">
+      <DependentUpon>SCHOOL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIMPLE_USER.resx">
+      <DependentUpon>SIMPLE_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENTS.resx">
+      <DependentUpon>STUDENTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENTS_SU.resx">
+      <DependentUpon>STUDENTS_SU.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_154434.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
